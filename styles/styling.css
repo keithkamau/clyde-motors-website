@@ -1,0 +1,389 @@
+body {
+    font-family: Google Sans;
+    margin: 0;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.logo-container img{
+  width: 200px;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.navigation-bar button {
+  background-color: black;
+  color: #fb542b;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navigation-bar button:hover {
+  transition: 0.2s ease;
+  color: #ff8b59;
+  transform: translateY(-2px);
+  border-bottom: 2px solid #ff8b59;
+}
+
+.business-description {
+  margin: 0;
+  padding: 20px;
+  background-image: url("../images/car-yard.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.page-details{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  width: 30%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 1.2;
+}
+
+.business-description h2 {
+  font-size: 45px;
+  color: whitesmoke;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.keyword-highlight {
+  color: #fb542b;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+.browse-inventory-button {
+  background-color: #fb542b;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.browse-inventory-button:hover {
+  transition: 0.3s ease;
+  background-color: #ff7b43;
+  .svg-icon {
+  transform: translateX(4px);
+}
+}
+
+.svg-icon {
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.hover-icon {
+  width: 25px;
+  margin-left: 20px;
+}
+
+.book-viewing-button {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px 25px 10px 25px;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: 1px solid;
+  border-color: rgb(161, 161, 161);
+  box-shadow: 0 5px 10px rgba(255, 139, 89, 0.1);
+}
+
+.book-viewing-button:hover {
+  transition: 0.3s ease;
+  background-color: #f0f0f0;
+  .svg-icon {
+  transform: translateX(4px);
+}
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(238, 238, 238);
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+.search-container h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-parameter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-parameter label {
+  margin-top: 10px;
+}
+
+.search-cars-button {
+  font-size: 18px;
+  background-color: #fb542b;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.search-cars-button:hover {
+  transition: 0.3s ease;
+  background-color: #ff7b43;
+  .svg-icon {
+  transform: translateX(4px);
+}
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(161, 161, 161);
+  font-size: 18px;
+  width: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.featured-cars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.featured-cars h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.car-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 280px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1),
+             0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.car-card:hover {
+  transition: 0.3s ease;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35),
+             0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+  width: 100%;
+  height: 190px;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+
+.car-price {
+  position: absolute;
+  background-color: rgb(238, 238, 238);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+}
+
+.car-name {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.car-year {
+  color: rgb(97, 97, 97);
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.feature-item {
+  background-color: rgb(238, 238, 238);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 3px;
+}
+
+.car-description {
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 50px;
+  white-space: initial;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel {
+  padding: 20px;
+  width: 80%;
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+.customer-reviews h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  display: block;
+}
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  animation: spin 40s linear infinite;
+}
+
+.testimonials::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
+.testimonial-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.testimonial-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.testimonial-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+.testimonial-text {
+  font-size: 14px;
+  font-style: italic;
+  color: rgb(78, 78, 78);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: #fb542b;
+  padding: 20px;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 200px;
+}
+
+.footer-description {
+  font-size: 14px;
+  width: 200px;
+}
+.footer-icon {
+  width: 18px;
+  margin-right: 5px;
+}
+.contact-link {
+  color: #fb542b;
+  text-decoration: none;
+}
+.contact-link:hover {
+  text-decoration: underline;
+}
+.contact-info h3 {
+  margin-top: 0;
+}

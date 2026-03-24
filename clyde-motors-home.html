@@ -1,0 +1,193 @@
+<!DOCTYPE html> 
+<html lang="en">  
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+  <title>Clyde Motors - Home</title> 
+  <link rel="stylesheet" href="styles/styling.css">
+</head>
+<body>
+  <header>
+    <section class="header-container">
+      <div class="logo-container"><img src="images/clyde-motors-logo.png" alt="Clyde Motors Company Ltd logo with orange background displaying black text, a silver sports car, and a black horse silhouette, serving as the home page link" href="clyde-motors-home.html" class="logo" onclick="window.location.href='clyde-motors-home.html'">
+      </div>
+      <div class="navigation-bar">
+        <button onclick="window.location.href='clyde-motors-home.html'">Home</button>
+        <button onclick="window.location.href='clyde-inventory.html'">Inventory</button>
+        <button onclick="window.location.href='clyde-financing.html'">Financing</button>
+        <button onclick="window.location.href='clyde-contact.html'">Contact Us</button>
+      </div>
+      </div>
+  </header>
+  <main>
+    <section class="business-description">
+        <h2>Find Your Perfect <p class="keyword-highlight">Dream Car</p></h2>
+        <p class="page-details">Your trusted partner for quality vehicles and exceptional service. Discover premium vehicles at unbeatable prices. From luxury sedans to reliable family cars, we have the perfect match for every Kenyan driver.</p>
+        <button class="browse-inventory-button">Browse Inventory<div class="svg-icon"><img src="icons/arrow-right-circle.svg" alt="Go To Inventory icon" class="hover-icon"></div>
+        </button>
+        <button class="book-viewing-button">Book a Viewing<div class="svg-icon"><img src="icons/booking-icon.svg" alt="Booking icon" class="hover-icon"></div>
+        </button>
+    </section>
+    <section class="search-container">
+      <h2>Search for Your Next Car</h2>
+      <div class="search-parameter">
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="car-make" placeholder="Car Make">
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="car-model" placeholder="Car Model">
+        <label for="year">Year:</label>
+        <select type="yom" id="year" name="car-year"></select>
+      </div>
+      <div class="search-button">
+        <button class="search-cars-button">Search<div class="svg-icon"><img src="icons/search-icon.svg" alt="Search icon" class="hover-icon"></div>
+        </button>
+      </section>
+    <section class="featured-cars">
+      <h1>Featured Cars</h1>
+      <div class="car-card">
+          <div class="car-image">
+            <img src="images/benz-e200-2016.jpg" alt="Benz E200 2016">
+            <div class="car-price">Ksh 3,450,000</div>
+          <div class="car-name">Mercedes-Benz E200</div>
+          <div class="car-year">2016</div>
+          <div class="car-features">
+            <ul class="feature-list">
+              <li class="feature-item">2000 cc</li>
+              <li class="feature-item">Turbocharged</li>
+              <li class="feature-item">Petrol</li>
+              <li class="feature-item">9-speed Automatic</li>
+              <li class="feature-item">50,000 km</li>
+              <li class="feature-item">Leather Interior</li>
+            </ul>
+          </div>
+          <div class="car-description">
+            Perfect balance of luxury, comfort, and performance. Finished in a stylish silver exterior, it presents a sophisticated and executive presence on the road.
+          </div>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-image">
+            <img src="images/evoque-2013.jpeg" alt="Range Rover Evoque 2013">
+            <div class="car-price">Ksh 2,900,000</div>
+          <div class="car-name">Range Rover Evoque</div>
+          <div class="car-year">2013</div>
+          <div class="car-features">
+            <ul class="feature-list">
+              <li class="feature-item">2400 cc</li>
+              <li class="feature-item">Turbocharged</li>
+              <li class="feature-item">Diesel</li>
+              <li class="feature-item">6-speed Automatic</li>
+              <li class="feature-item">80,000 km</li>
+              <li class="feature-item">Panoramic Sunroof</li>
+            </ul>
+          </div>
+          <div class="car-description">Compact luxury SUV that blends bold design with confident all-wheel-drive performance. Premium interior, advanced tech, and unmistakable Range Rover capability in a stylish urban-ready package.</div>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-image">
+            <img src="images/patrol-2022.jpg" alt="Nissan Patrol 2022 SE">
+            <div class="car-price">Ksh 20,000,000</div>
+          <div class="car-name">Nissan Patrol 2022 SE</div>
+          <div class="car-year">2022</div>
+          <div class="car-features">
+            <ul class="feature-list">
+              <li class="feature-item">4000 cc</li>
+              <li class="feature-item">Twin Turbocharged</li>
+              <li class="feature-item">Petrol</li>
+              <li class="feature-item">7-speed Automatic</li>
+              <li class="feature-item">10,000 km</li>
+              <li class="feature-item">4WD</li>
+            </ul>
+          </div>
+          <div class="car-description">Powerful full-size SUV built for comfort, capability, and commanding road presence, delivering smooth performance and legendary off-road confidence. </div>
+          </div>
+        </div>
+        <div class="car-card">
+          <div class="car-image">
+            <img src="images/cx-8-2018.jpg" alt="Mazda CX-8 2018">
+            <div class="car-price">Ksh 4,350,000</div>
+          <div class="car-name">Mazda CX-8</div>
+          <div class="car-year">2018</div>
+          <div class="car-features">
+            <ul class="feature-list">
+              <li class="feature-item">2500 cc</li>
+              <li class="feature-item">Turbocharged</li>
+              <li class="feature-item">Diesel</li>
+              <li class="feature-item">6-speed Automatic</li>
+              <li class="feature-item">30,000 km</li>
+              <li class="feature-item">7-Seater</li>
+            </ul>
+          </div>
+          <div class="car-description">Powered by efficient Skyactiv engines with available AWD, it delivers smooth performance and practicality for family and everyday driving.</div>
+          </div>
+        </div>
+    </section>
+    <section class="customer-reviews">
+      <h2>Testimonials</h2>
+      <div class="carousel">
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="profile-pic-container"> <img src="icons/profile-pic-icon.svg" alt="Profile Picture"> </div>
+            <div class="testimonial-name"> John Kamau </div>
+          </div>
+          <div class="testimonial-text">Clyde Motors is the best place to buy a car. The staff is friendly and helpful, and the prices are competitive.</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="profile-pic-container"> <img src="icons/profile-pic-icon.svg" alt="Profile Picture"> </div>
+            <div class="testimonial-name"> Mary Wanjiku </div>
+          </div>
+          <div class="testimonial-text">I had a great experience buying my car from Clyde Motors. The process was smooth and the car was in excellent condition.</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="profile-pic-container"> <img src="icons/profile-pic-icon.svg" alt="Profile Picture"> </div>
+            <div class="testimonial-name"> Simon Omondi </div>
+          </div>
+          <div class="testimonial-text">Premium Service provided by the team at Clyde Motors. Highly recommended!</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="profile-pic-container"> <img src="icons/profile-pic-icon.svg" alt="Profile Picture"> </div>
+            <div class="testimonial-name"> Fiona Salama </div>
+          </div>
+          <div class="testimonial-text">Exceptional service and a wide range of quality vehicles. Clyde Motors is my go-to for all things automotive!</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="profile-pic-container"> <img src="icons/profile-pic-icon.svg" alt="Profile Picture"> </div>
+            <div class="testimonial-name"> Mohammed Hassan </div>
+          </div>
+          <div class="testimonial-text">Outstanding customer service and a fantastic selection of vehicles. Clyde Motors delivers on every front! Asanteni sana!</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="profile-pic-container"> <img src="icons/profile-pic-icon.svg" alt="Profile Picture"> </div>
+            <div class="testimonial-name"> Moses Mjomba </div>
+          </div>
+          <div class="testimonial-text">Got my car delivered in perfect condition. Clyde Motors exceeded my expectations! Excellent service!</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo-container">
+        <img src="images/clyde-motors-logo.png" alt="Clyde Motors Logo" class="footer-logo">
+        <p class="footer-description">Your trusted partner in quality automotive solutions.</p>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p><img src="icons/phone-icon.svg" alt="Phone icon" class="footer-icon"> <a href="tel:+254740635621" class="contact-link">+254740 635 621</a></p>
+        <p><img src="icons/email-icon.svg" alt="Email icon" class="footer-icon"> <a href="mailto:info@clydemotors.co.ke" class="contact-link">info@clydemotors.co.ke</a></p>
+        <p><img src="icons/location-icon.svg" alt="Location icon" class="footer-icon"> <a href="https://maps.app.goo.gl/NeRzxzS8G6hP2E8g9" class="contact-link">Kiambu Rd, Nairobi</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
