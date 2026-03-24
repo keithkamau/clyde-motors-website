@@ -17,6 +17,7 @@ header {
 
 .logo-container img{
   width: 200px;
+  margin-left: 20px;
 }
 .logo:hover {
   cursor: pointer;
@@ -48,21 +49,22 @@ header {
 
 .business-description {
   margin: 0;
-  padding: 20px;
+  padding: 40px 20px;
   background-image: url("../images/car-yard.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: 0;
 }
 
 .page-details{
   font-size: 20px;
   color: rgb(255, 255, 255);
-  width: 30%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 40%;
+  padding: 30px;
   line-height: 1.2;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
 }
 
 .business-description h2 {
@@ -70,10 +72,14 @@ header {
   color: whitesmoke;
   margin-bottom: 0;
   padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 20px;
 }
 
 .keyword-highlight {
-  color: #fb542b;
+  color: #ff7b43;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -94,7 +100,7 @@ header {
   background-color: #ff7b43;
   .svg-icon {
   transform: translateX(4px);
-}
+  }
 }
 
 .svg-icon {
@@ -118,13 +124,14 @@ header {
   border: 1px solid;
   border-color: rgb(161, 161, 161);
   box-shadow: 0 5px 10px rgba(255, 139, 89, 0.1);
+  align-items: center;
 }
 
 .book-viewing-button:hover {
   transition: 0.3s ease;
   background-color: #f0f0f0;
   .svg-icon {
-  transform: translateX(4px);
+  transform: scale(110%);
 }
 }
 
@@ -171,7 +178,7 @@ header {
   transition: 0.3s ease;
   background-color: #ff7b43;
   .svg-icon {
-  transform: translateX(4px);
+  transform: scale(110%);
 }
 }
 
@@ -289,43 +296,100 @@ label {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.why-clyde {
+  background-color: rgb(238, 238, 238);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-clyde p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(78, 78, 78);
+}
+
+.milestones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.milestone-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin-right: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+}
+.milestone-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.milestone-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.milestone-description {
+  font-size: 14px;
+  color: rgb(78, 78, 78);
+  text-align: center;
+}
 
 .carousel {
   padding: 20px;
   width: 80%;
-  margin: 20px 40px;
+  margin: 20px auto;
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
-.customer-reviews h2 {
+.customer-reviews h2, .why-clyde h2 {
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
   font-size: 40px;
   display: block;
 }
+
 .testimonials {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow: hidden;
-  overflow-x: auto;
   animation: spin 40s linear infinite;
+  justify-content: center;
 }
 
-.testimonials::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
   display: none;
 }
 
-.testimonial-card {
+.testimonial-card-a {
   background-color: rgb(240, 240, 240);
   color: black;
   padding: 20px;
   border-radius: 10px;
+  flex: 0 0 15em;
+  align-content: center;
   margin-right: 20px;
-  width: 300px;
-  flex-shrink: 0;
+}
+.testimonial-card-b {
+  background-color: #ff7b43;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 0 0 15em;
+  align-content: center;
+  overflow-wrap: normal;
+  margin-right: 20px;
 }
 
 @keyframes spin {
@@ -349,10 +413,15 @@ label {
   font-weight: bold;
   font-size: 16px;
 }
-.testimonial-text {
+.testimonial-text-a {
   font-size: 14px;
   font-style: italic;
   color: rgb(78, 78, 78);
+}
+.testimonial-text-b {
+  font-size: 14px;
+  font-style: italic;
+  color: white;
 }
 
 .footer-container {
