@@ -297,7 +297,7 @@ label {
   text-overflow: ellipsis;
 }
 .why-clyde {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(202, 202, 202);
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -315,8 +315,10 @@ label {
 .milestones {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .milestone-card {
   display: flex;
@@ -437,7 +439,9 @@ label {
 .footer-logo {
   width: 200px;
 }
-
+.footer-logo:hover {
+  cursor: pointer;
+}
 .footer-description {
   font-size: 14px;
   width: 200px;
