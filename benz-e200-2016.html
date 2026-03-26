@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
     rel="stylesheet">
   <title>Mercedes Benz E-200</title>
   <link rel="stylesheet" href="styles/styling.css">
   <link rel="stylesheet" href="styles/styling-2.css">
+  <link rel="stylesheet" href="styles/styling-3.css">
 </head>
+
 <body>
   <header>
     <section class="header-container">
@@ -28,38 +31,77 @@
       </div>
   </header>
   <main>
-    <section class="vehicle-details-container">
-      <div class="image-slider-wrapper">
-        <div class="vehicle-image-slider">
-          <img id="slide-1" src="images/benz-e200-2016.jpg" alt="2016 Mercedes-Benz E200 in silver, showcasing its sleek design and luxurious features, available at Clyde Motors" class="vehicle-image">
-          <img id="slide-2" src="images/alternative-car photos/alternative-benz-e200-2016-1.jpg" alt="Alternative view of the 2016 Mercedes-Benz E200">
-          <img id="slide-3" src="images/alternative-car photos/alternative-benz-e200-2016-2.jpg" alt="Alternative view of the 2016 Mercedes-Benz E200">
-          <img id="slide-4" src="images/alternative-car photos/alternative-benz-e200-2016-3.jpg" alt="Alternative view of the 2016 Mercedes-Benz E200">
-          <img id="slide-5" src="images/alternative-car photos/alternative-benz-e200-2016-4.jpg" alt="Alternative view of the 2016 Mercedes-Benz E200">
-          <img id="slide-6" src="images/alternative-car photos/alternative-benz-e200-2016-5.jpg" alt="Alternative view of the 2016 Mercedes-Benz E200">
-          <img id="slide-7" src="images/alternative-car photos/alternative-benz-e200-2016-6.jpg" alt="Alternative view of the 2016 Mercedes-Benz E200">
+    <div class="slider-container">
+      <input type="radio" name="slider" id="slide1" checked title="Slide 1">
+      <input type="radio" name="slider" id="slide2" title="Slide 2">
+      <input type="radio" name="slider" id="slide3" title="Slide 3">
+      <input type="radio" name="slider" id="slide4" title="Slide 4">
+      <input type="radio" name="slider" id="slide5" title="Slide 5">
+      <input type="radio" name="slider" id="slide6" title="Slide 6">
+
+      <div class="slider-wrapper">
+        <div class="slides">
+          <div class="slide">
+            <img src="images/benz-e200-2016.jpg" alt="Slide 1 - 2016 Mercedes Benz E-200 in silver, showcasing its elegant design and luxurious features">
           </div>
-          <div class="slider-controls">
-            <a href="#slide-1">1</a>
-            <a href="#slide-2">2</a>
-            <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
-            <a href="#slide-5">5</a>
-            <a href="#slide-6">6</a>
-            <a href="#slide-7">7</a>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-benz-e200-2016-1.jpg" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-benz-e200-2016-2.jpg" alt="Slide 3">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-benz-e200-2016-3.jpg" alt="Slide 4">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-benz-e200-2016-4.jpg" alt="Slide 5">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-benz-e200-2016-5.jpg" alt="Slide 6">
           </div>
         </div>
+
+        <!-- Navigation Arrows -->
+        <div class="arrows">
+          <label for="slide1" class="arrow prev" id="prev1">‹</label>
+          <label for="slide2" class="arrow prev" id="prev2">‹</label>
+          <label for="slide3" class="arrow prev" id="prev3">‹</label>
+          <label for="slide4" class="arrow prev" id="prev4">‹</label>
+          <label for="slide5" class="arrow prev" id="prev5">‹</label>
+          <label for="slide6" class="arrow prev" id="prev6">‹</label>
+
+          <label for="slide2" class="arrow next" id="next1">›</label>
+          <label for="slide3" class="arrow next" id="next2">›</label>
+          <label for="slide4" class="arrow next" id="next3">›</label>
+          <label for="slide5" class="arrow next" id="next4">›</label>
+          <label for="slide6" class="arrow next" id="next5">›</label>
+          <label for="slide1" class="arrow next" id="next6">›</label>
+
+
+        </div>
       </div>
-      <div class="vehicle-info-container">
-        <h1>2016 Mercedes-Benz E200</h1>
-        <p><strong>Price:</strong> KES 4,350,000</p>
-        <p><strong>Mileage:</strong> 50,000 km</p>
-        <p><strong>Engine:</strong> 2.0L Turbocharged I4</p>
-        <p><strong>Transmission:</strong> 7-speed automatic</p>
-        <p><strong>Color:</strong> Silver</p>
-        <button onclick="window.location.href='clyde-contact.html'" class="contact-button">Contact Us for More Details<img src="icons/phone-icon.svg" alt="Contact icon" class="button-icon"></button>
+
+      <!-- Dots Navigation -->
+      <div class="dots">
+        <label for="slide1" class="dot"></label>
+        <label for="slide2" class="dot"></label>
+        <label for="slide3" class="dot"></label>
+        <label for="slide4" class="dot"></label>
+        <label for="slide5" class="dot"></label>
+        <label for="slide6" class="dot"></label>
       </div>
-    </section>
+    </div>
+    <div class="vehicle-info-container">
+      <h1>2016 Mercedes Benz E200</h1>
+      <p><strong>Price:</strong> KES 4,350,000</p>
+      <p><strong>Mileage:</strong> 50,000 km</p>
+      <p><strong>Engine:</strong> 2.0L Turbocharged I4</p>
+      <p><strong>Transmission:</strong> 9-speed automatic</p>
+      <p><strong>Color:</strong> Silver</p>
+      <p><strong>Interior:</strong> Black Leather</p>
+      <button onclick="window.location.href='clyde-contact.html'" class="contact-button">Contact Us for More Details<img
+          src="icons/phone-icon.svg" alt="Contact icon" class="button-icon"></button>
+    </div>
   </main>
   <footer>
     <div class="footer-container">
@@ -78,5 +120,6 @@
       </div>
     </div>
   </footer>
-</body>  
+</body>
+
 </html>
