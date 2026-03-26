@@ -23,13 +23,15 @@ This code is a HTML & CSS compilation for a car dealership website that is still
 
 2. Install dependencies
 ***bash
-  npm install - live-server
-***
 
+  npm install - live-server
+
+***
 
 ## Getting Started
 
 ### Prerequisites
+
 - Web browser (Chrome, Brave, Firefox, Safari, Edge)
 - Code Editor (VS Code)
 - Basic Knowledge of HTML/CSS/JavaScript
@@ -41,4 +43,3 @@ This project is currently under active development. Contribution guidelines will
 
 Last Updated: March 26, 2026
 Next Week: March 27, 2026
-T
