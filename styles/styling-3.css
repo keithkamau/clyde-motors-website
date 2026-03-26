@@ -13,6 +13,7 @@
 .slider-wrapper {
   position: relative;
   overflow: hidden;
+  width: 60vw;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -24,11 +25,10 @@
 
 .slide {
   flex: 1 0 100%;
-  width: 80vw;
 }
 
 .slide img {
-  width: 100%;
+  width: 60vw;
   aspect-ratio: 16/9;
   height: auto;
   display: block;
