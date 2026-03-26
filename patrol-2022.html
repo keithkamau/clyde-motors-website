@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+    rel="stylesheet">
+  <title>Mercedes Benz E-200</title>
+  <link rel="stylesheet" href="styles/styling.css">
+  <link rel="stylesheet" href="styles/styling-2.css">
+  <link rel="stylesheet" href="styles/styling-3.css">
+</head>
+
+<body>
+  <header>
+    <section class="header-container">
+      <div class="logo-container"><img src="images/clyde-motors-logo.png"
+          alt="Clyde Motors Company Ltd logo with orange background displaying black text, a silver sports car, and a black horse silhouette, serving as the home page link"
+          href="clyde-motors-home.html" class="logo" onclick="window.location.href='clyde-motors-home.html'">
+      </div>
+      <div class="navigation-bar">
+        <button onclick="window.location.href='clyde-motors-home.html'">Home</button>
+        <button onclick="window.location.href='clyde-inventory.html'">Inventory</button>
+        <button onclick="window.location.href='clyde-financing.html'">Financing</button>
+        <button onclick="window.location.href='clyde-contact.html'">Contact Us</button>
+      </div>
+      </div>
+  </header>
+  <main>
+    <div class="slider-container">
+      <input type="radio" name="slider" id="slide1" checked title="Slide 1">
+      <input type="radio" name="slider" id="slide2" title="Slide 2">
+      <input type="radio" name="slider" id="slide3" title="Slide 3">
+      <input type="radio" name="slider" id="slide4" title="Slide 4">
+      <input type="radio" name="slider" id="slide5" title="Slide 5">
+      <input type="radio" name="slider" id="slide6" title="Slide 6">
+      <input type="radio" name="slider" id="slide7" title="Slide 7">
+
+      <div class="slider-wrapper">
+        <div class="slides">
+          <div class="slide">
+            <img src="images/patrol-2022.jpg" alt="Slide 1 - 2022 Nissan Patrol in white, showcasing its rugged design and advanced features">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-patrol-2022-1.jpg" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-patrol-2022-2.jpg" alt="Slide 3">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-patrol-2022-3.jpg" alt="Slide 4">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-patrol-2022-4.jpg" alt="Slide 5">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-patrol-2022-5.jpg" alt="Slide 6">
+          </div>
+          <div class="slide">
+            <img src="images/alternative-car photos/alternative-patrol-2022-6.jpg" alt="Slide 7">
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="arrows">
+          <label for="slide1" class="arrow prev" id="prev1">‹</label>
+          <label for="slide2" class="arrow prev" id="prev2">‹</label>
+          <label for="slide3" class="arrow prev" id="prev3">‹</label>
+          <label for="slide4" class="arrow prev" id="prev4">‹</label>
+          <label for="slide5" class="arrow prev" id="prev5">‹</label>
+          <label for="slide6" class="arrow prev" id="prev6">‹</label>
+          <label for="slide7" class="arrow prev" id="prev7">‹</label>
+
+          <label for="slide2" class="arrow next" id="next1">›</label>
+          <label for="slide3" class="arrow next" id="next2">›</label>
+          <label for="slide4" class="arrow next" id="next3">›</label>
+          <label for="slide5" class="arrow next" id="next4">›</label>
+          <label for="slide6" class="arrow next" id="next5">›</label>
+          <label for="slide7" class="arrow next" id="next6">›</label>
+          <label for="slide1" class="arrow next" id="next7">›</label>
+
+          
+        </div>
+      </div>
+
+      <!-- Dots Navigation -->
+      <div class="dots">
+        <label for="slide1" class="dot"></label>
+        <label for="slide2" class="dot"></label>
+        <label for="slide3" class="dot"></label>
+        <label for="slide4" class="dot"></label>
+        <label for="slide5" class="dot"></label>
+        <label for="slide6" class="dot"></label>
+        <label for="slide7" class="dot"></label>
+      </div>
+    </div>
+    <div class="vehicle-info-container">
+      <h1>2022 Nissan Patrol SE</h1>
+      <p><strong>Price:</strong> KES 20,000,000</p>
+      <p><strong>Mileage:</strong> 10,000 km</p>
+      <p><strong>Engine:</strong> 4.0L Twin Turbocharged V8</p>
+      <p><strong>Transmission:</strong> 7-speed automatic</p>
+      <p><strong>Color:</strong> Silver</p>
+      <p><strong>Interior:</strong> Cream Leather</p>
+      <button onclick="window.location.href='clyde-contact.html'" class="contact-button">Contact Us for More Details<img
+          src="icons/phone-icon.svg" alt="Contact icon" class="button-icon"></button>
+    </div>
+  </main>
+</body>
+</html>
